@@ -29,7 +29,7 @@ You can use placeholder option to show country-code based example phone numbers 
 <input type="text" ng-model="test" data-place-holder="1" data-country-code="countryCode" ng-init="countryCode='US'" ng-valid-phone />
 ```
 
-You can set error/success messages by using anguler's validation checks. Eg;
+You can set error/success messages by using angular's validation checks. Eg;
 ```
 <form name="myForm">
   <input type="text" ng-model="test" name="test" data-place-holder="1" data-country-code="countryCode" ng-init="countryCode='US'" ng-valid-phone />
