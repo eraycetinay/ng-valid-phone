@@ -30,8 +30,12 @@ You can use placeholder option to show country-code based example phone numbers 
 ```
 
 If you specify a countryCode, validation will be done only for that country. 
+```
 Eg; countryCode:US,  Valid numbers: 1201 555 1234 - 201 555 1234
 Note: if client uses country code at the beginning it will be removed after validation automatically.
+```
 
 If you dony specify a country code, validation will be done for all international numbers.
+```
 Eg; Valid numbers: 86 431 2344 1234 (CH) - 90 531 232 12 34 (TR) - 1 201 555-1234 (US)
+```
