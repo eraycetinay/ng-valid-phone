@@ -1,4 +1,4 @@
-# ng-latinize
+# ng-valid-phone
 Angular directive for international phone number validations which use google's libphonenumber library.
 
 Installation
