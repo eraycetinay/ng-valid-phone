@@ -15,7 +15,7 @@ Add libphonenumber.js and ng-valid-phone.js to your source. Eg;
 
 Add ng-valid-phone directive to your html element. Eg;
 ```
-<input type="text" ng-model="test" data-place-holder="1" ng-valid-phone />
+<input type="text" ng-model="test" ng-valid-phone />
 ```
 
 You can use seperated country code (2 letter regional code) option to get only national number with its pattern Eg;
