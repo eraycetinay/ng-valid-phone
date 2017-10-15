@@ -21,12 +21,12 @@ Add ng-valid-phone directive to your html element. Eg;
 You can use seperated country code (2 letter regional code) option to get only national number with its pattern Eg;
 ```
 You can use a select list for 'countryCode' without using ng-init on input. 
-<input type="text" ng-model="test" data-country-code="countryCode" ng-init="countryCode='US' ng-valid-phone />
+<input type="text" ng-model="test" data-country-code="countryCode" ng-init="countryCode='US'" ng-valid-phone />
 ```
 
 You can use placeholder option to show country-code based example phone numbers as placeholders. Eg;
 ```
-<input type="text" ng-model="test" data-place-holder="1" data-country-code="countryCode" ng-init="countryCode='US' ng-valid-phone />
+<input type="text" ng-model="test" data-place-holder="1" data-country-code="countryCode" ng-init="countryCode='US'" ng-valid-phone />
 ```
 
 If you specify a countryCode, validation will be done only for that country. 
