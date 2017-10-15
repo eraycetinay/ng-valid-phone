@@ -29,6 +29,15 @@ You can use placeholder option to show country-code based example phone numbers 
 <input type="text" ng-model="test" data-place-holder="1" data-country-code="countryCode" ng-init="countryCode='US'" ng-valid-phone />
 ```
 
+You can set error/success messages by using angulers validation checks. Eg;
+```
+<form name="myForm">
+  <input type="text" ng-model="test" name="test" data-place-holder="1" data-country-code="countryCode" ng-init="countryCode='US'" ng-valid-phone />
+  <span ng-show="!myForm.test.$valid">Please enter a valid number.</span>
+  <span ng-show="myForm.test.$valid">Your phone number is valid.</span>        
+</form>
+```
+
 If you specify a countryCode, validation will be done only for that country. 
 ```
 Eg; countryCode:US,  Valid numbers: 1201 555 1234 - 201 555 1234
