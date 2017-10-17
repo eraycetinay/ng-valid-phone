@@ -12,6 +12,7 @@ bower install ng-valid-phone
 ## Features
 - International number validation.
 - National number validation.
+- Number masking and filtering
 - Example numbers as placeholders.
 - Defining countryCode ability.
 - Simple and fast integration.
@@ -23,23 +24,27 @@ bower install ng-valid-phone
 <script src="bower_components/ng-valid-phone/dist/ng-valid-phone.js"></script>
 ```
 
-- Add ng-valid-phone directive to your html element.
+### Basic Setup
+- Add ng-valid-phone directive to your html element.__
+With basic setup, validation will work for all international numbers eg;__ 
+Eg; 86 431 2344 1234 (CH) - 1 201 555-1234 (US)
 ```
 <input type="text" ng-model="test" ng-valid-phone />
 ```
-
-You can use seperated country code (2 letter regional code) option to get only national number with its pattern Eg;
-```
-You can use a select list for 'countryCode' without using ng-init on input. 
+### Country Code Setup
+- You can use country code **(2 letter regional code)** option to get only national number with its pattern.__
+**Note:** countryCode should be initialize as a variable. In this way you can create a select box for your country list.__
+Or simply you can use ng-init to initialize countryCode in temaplate like in this example.
+``` 
 <input type="text" ng-model="test" data-country-code="countryCode" ng-init="countryCode='US'" ng-valid-phone />
 ```
-
-You can use placeholder option to show country-code based example phone numbers as placeholders. Eg;
+### Placeholder Setup
+- If you define a country-code param, you can use place-holder option too. It will show an example national number for the defined country.
 ```
 <input type="text" ng-model="test" data-place-holder="1" data-country-code="countryCode" ng-init="countryCode='US'" ng-valid-phone />
 ```
-
-You can set error/success messages by using angular's validation checks. Eg;
+## Example
+You can set **error/success** messages by using angular's basic validation checks.
 ```
 <form name="myForm">
   <input type="text" ng-model="test" name="test" data-place-holder="1" data-country-code="countryCode" ng-init="countryCode='US'" ng-valid-phone />
@@ -47,14 +52,15 @@ You can set error/success messages by using angular's validation checks. Eg;
   <span ng-show="myForm.test.$valid">Your phone number is valid.</span>        
 </form>
 ```
-
-If you specify a countryCode, validation will be done only for that country. 
+## Notes
+- If you define a countryCode, validation will be done only for that country.
 ```
-Eg; countryCode:US,  Valid numbers: 1201 555 1234 - 201 555 1234
-Note: if client uses country code at the beginning it will be removed after validation automatically.
+countryCode:US,  Valid numbers: 1201 555 1234 - 201 555 1234
 ```
-
-If you dont specify a country code, validation will be done for all international numbers.
+- if client uses country code at the beginning it will be removed after validation automatically.
+- If you dont specify a country code, validation will be done for all international numbers.
 ```
 Eg; Valid numbers: 86 431 2344 1234 (CH) - 90 531 232 12 34 (TR) - 1 201 555-1234 (US)
 ```
+## License
+[MIT](LICENSE) license.
