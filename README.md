@@ -2,7 +2,7 @@
 [![npm version](https://badge.fury.io/js/ng-valid-phone.svg)](https://badge.fury.io/js/ng-valid-phone)
 [![dependency Status](https://david-dm.org/eraycetinay/ng-valid-phone.svg)](https://david-dm.org/eraycetinay/ng-valid-phone.svg)
 
-Angularjs directive for international phone number validations which use google's libphonenumber library.
+Angularjs directive which use google's libphonenumber library for international phone number validations.
 
 ## Installation
 ```
