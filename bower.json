@@ -1,7 +1,7 @@
 {
   "name": "ng-valid-phone",
   "version": "1.0.1",
-  "description": "Angular directive for international phone number validations which use google's libphonenumber library.",
+  "description": "Angularjs directive which use google's libphonenumber library for international phone number validations.",
   "main": "dist/ng-valid-phone.js",
   "authors": [
     "Eray Cetinay <eraycetinay@gmail.com>"
