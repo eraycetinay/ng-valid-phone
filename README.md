@@ -59,7 +59,7 @@ countryCode:US,  Valid numbers: 1201 555 1234 - 201 555 1234
 ```
 - if client uses country code at the beginning it will be removed after validation automatically.
 ```
-countryCode:US,  Number: 1201 555 1234 will be changed to 201 555 1234 after the last digit is entered.
+countryCode:US,  Number: 1201 555 1234 or 0201 555 1234 will be changed to 201 555 1234 after the last digit is entered.
 ```
 - If you dont specify a country code, validation will be done for all international numbers.
 ```
