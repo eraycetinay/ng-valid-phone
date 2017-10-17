@@ -25,16 +25,16 @@ bower install ng-valid-phone
 ```
 
 ### Basic Setup
-- Add ng-valid-phone directive to your html element.__
-With basic setup, validation will work for all international numbers eg;__ 
-Eg; 86 431 2344 1234 (CH) - 1 201 555-1234 (US)
+- Add ng-valid-phone directive to your html element.
+- With basic setup, validation will work for all international numbers.
+- Eg; 86 431 2344 1234 (CH) - 1 201 555-1234 (US)
 ```
 <input type="text" ng-model="test" ng-valid-phone />
 ```
 ### Country Code Setup
-- You can use country code **(2 letter regional code)** option to get only national number with its pattern.__
-**Note:** countryCode should be initialize as a variable. In this way you can create a select box for your country list.__
-Or simply you can use ng-init to initialize countryCode in temaplate like in this example.
+- You can use country code **(2 letter regional code)** option to get only national number with its pattern.
+- **countryCode** should be initialize as a variable. In this way you can create a select box for your country list.
+- Or simply you can use ng-init to initialize countryCode in temaplate like in this example.
 ``` 
 <input type="text" ng-model="test" data-country-code="countryCode" ng-init="countryCode='US'" ng-valid-phone />
 ```
