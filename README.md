@@ -1,19 +1,28 @@
-# ng-valid-phone
+# Ng Valid Phone
+[![npm version](https://badge.fury.io/js/ng-valid-phone.svg)](https://badge.fury.io/js/ng-valid-phone)
+[![dependency Status](https://david-dm.org/eraycetinay/ng-valid-phone.svg)](https://david-dm.org/eraycetinay/ng-valid-phone.svg)
 Angular directive for international phone number validations which use google's libphonenumber library.
 
-Installation
+## Installation
 ```
-npm install ng-valid-phone or bower install ng-valid-phone
+npm install ng-valid-phone
+bower install ng-valid-phone
 ```
+## Features
+- International number validation.
+- National number validation.
+- Example numbers as placeholders.
+- Defining countryCode ability.
+- Simple and fast integration.
 
-Add libphonenumber.js and ng-valid-phone.js to your source. Eg;
+## Usage
+- Add 'libphonenumber.js' and 'ng-valid-phone.js' to your source.
 ```
-
 <script src="bower_components/google-libphonenumber/dist/libphonenumber.js"></script>
 <script src="bower_components/ng-valid-phone/dist/ng-valid-phone.js"></script>
 ```
 
-Add ng-valid-phone directive to your html element. Eg;
+- Add ng-valid-phone directive to your html element.
 ```
 <input type="text" ng-model="test" ng-valid-phone />
 ```
