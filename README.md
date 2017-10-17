@@ -58,6 +58,9 @@ You can set **error/success** messages by using angular's basic validation check
 countryCode:US,  Valid numbers: 1201 555 1234 - 201 555 1234
 ```
 - if client uses country code at the beginning it will be removed after validation automatically.
+```
+countryCode:US,  Number: 1201 555 1234 will be changed to 201 555 1234 after the last digit is entered.
+```
 - If you dont specify a country code, validation will be done for all international numbers.
 ```
 Eg; Valid numbers: 86 431 2344 1234 (CH) - 90 531 232 12 34 (TR) - 1 201 555-1234 (US)
