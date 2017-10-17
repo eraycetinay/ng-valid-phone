@@ -3,7 +3,6 @@
 [![dependency Status](https://david-dm.org/eraycetinay/ng-valid-phone.svg)](https://david-dm.org/eraycetinay/ng-valid-phone.svg)
 
 Angularjs directive which use google's libphonenumber library for international phone number validations.
-
 ## Installation
 ```
 npm install ng-valid-phone
@@ -16,14 +15,12 @@ bower install ng-valid-phone
 - Example numbers as placeholders.
 - Defining countryCode ability.
 - Simple and fast integration.
-
 ## Usage
 - Add 'libphonenumber.js' and 'ng-valid-phone.js' to your source.
 ```
 <script src="bower_components/google-libphonenumber/dist/libphonenumber.js"></script>
 <script src="bower_components/ng-valid-phone/dist/ng-valid-phone.js"></script>
 ```
-
 ### Basic Setup
 - Add ng-valid-phone directive to your html element.
 - With basic setup, validation will work for all international numbers.
