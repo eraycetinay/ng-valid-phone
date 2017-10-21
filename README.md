@@ -1,6 +1,8 @@
 # Ng Valid Phone
 [![npm version](https://badge.fury.io/js/ng-valid-phone.svg)](https://badge.fury.io/js/ng-valid-phone)
+[![Bower](https://img.shields.io/bower/v/ng-valid-phone.svg)]()
 [![dependency Status](https://david-dm.org/eraycetinay/ng-valid-phone.svg)](https://david-dm.org/eraycetinay/ng-valid-phone.svg)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
 
 Angularjs directive which use google's libphonenumber library for international phone number validations.
 ## Installation
