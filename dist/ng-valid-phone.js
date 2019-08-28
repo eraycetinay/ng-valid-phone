@@ -89,6 +89,10 @@
                 };
 
                 modelCtrl.$validators.invalidPhone = function(modelValue, viewValue) {
+                    if (modelCtrl.$isEmpty(modelValue)) {
+                      return true;
+                    }
+
                     return IsPhoneValid(modelValue);
                 };
             }
